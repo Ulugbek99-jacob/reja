@@ -1,0 +1,20 @@
+{
+    "name": "Jacob",
+    "profession": "Software Engineer",
+    "age": 25,
+    "residence": "S.Korea",
+    "address": "S.Korea, Seoul",
+    "languages": ["Uzbek", "Korean", "English"],
+    "skills": ["HTML", "CSS", "JS", "NodeJs", "JavaScript"],
+    "extra_skills": ["Bootstrap, Materialize", "Styling, Sass", "Django, Flask", "GIT Knowledge"],
+    "work_place": "IT company",
+    "service_desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum luctus commodo lobortis. Nulla suscipit dui ut dignissim efficitur. Quisque non massa congue, dignissim lacus ac, pellentesque dolor. Sed malesuada dolor sit amet interdum malesuada. Sed eget lacus in nulla maximus dictum. In ut iaculis lorem. Integer luctus diam quis mi congue posuere. Donec sed ante sit amet dui interdum feugiat.",
+    "about_me": "Proin tristique tortor eget justo efficitur maximus. Cras vestibulum lobortis lobortis. Quisque elit est, viverra ac varius vel, viverra a odio. Nullam vel tristique mi. Donec ex orci, lobortis nec ultricies ultrices, finibus non augue. Maecenas ullamcorper velit vitae mauris vestibulum blandit.",
+    "city": "Termiz",
+    "title": ["Flower", "Seedlings", "Gardner", "Old", "New"],
+    "flower_desc": ["What is a Flower?", "What is a Seedling?","Who is Gardner?"],
+    "flower_name": ["Tulip", "gaffodil", "Poppy", "Sunflower", "Bluebell", "Rose", "Snowdrop", "Cherry", "blossom"],
+    "flower_price": ["15$", "25$", "12$", "20$", "35$", "30$", "22$", "19$", "9$"],
+    "famous_words": ["World is Beautiful with Flowers"],
+    "famous_name": ["'Steve Jobs"]
+}
