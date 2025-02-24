@@ -15,7 +15,14 @@ fs.readFile("database/user.json", "utf8", (err, data) => {
 
 // 1: Kirish code 
 app.use(express.static('public'));
-app.use(express.json());
+app.use(express.json())
+
+
+              
+
+
+
+
 app.use(express.urlencoded({extended: true}));
 
 // 2: Session code
