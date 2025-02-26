@@ -125,9 +125,6 @@ function countDigits(word) {
    }
   return count;   
   }
-  
-  
-  
   console.log(countDigits("ad2a54y79wet0sfgb9"));
   
 
