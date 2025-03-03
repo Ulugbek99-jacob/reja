@@ -115,17 +115,23 @@
 // run();
 
 // B-TASK
-function countDigits(word) {
-    let count = 0;
-   for (let i=0; i<word.length; i++){
-     if (word[i] >= "0" && word[i] <= "9"){  
-     // console.log(word[i])
-     count=count+1;
-     }
+// function countDigits(word) {
+//     let count = 0;
+//    for (let i=0; i<word.length; i++){
+//      if (word[i] >= "0" && word[i] <= "9"){  
+//      // console.log(word[i])
+//      count=count+1;
+//      }
+//    }
+//   return count;   
+//   }
+//   console.log(countDigits("ad2a54y79wet0sfgb9"));
+
+// C-TASK
+function checkContent(word1,word2) {
+    return word1.split('').sort().join('') === word2.split('').sort().join('');
    }
-  return count;   
-  }
-  console.log(countDigits("ad2a54y79wet0sfgb9"));
+   console.log(checkContent("mitgroup", "gmtiprou"));
   
 
 
