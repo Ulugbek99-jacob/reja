@@ -128,13 +128,38 @@
 //   console.log(countDigits("ad2a54y79wet0sfgb9"));
 
 // C-TASK
-function checkContent(word1,word2) {
-    return word1.split('').sort().join('') === word2.split('').sort().join('');
-   }
-   console.log(checkContent("mitgroup", "gmtiprou"));
+// function checkContent(word1,word2) {
+//     return word1.split('').sort().join('') === word2.split('').sort().join('');
+//    }
+//    console.log(checkContent("mitgroup", "gmtiprou"));
   
+// D-TASK
+class Shop {
+    non;
+    cola;
+    lagmon;
+    
+    
+    constructor(non, cola, lagmon) {
+      this.non = non;
+      this.cola = cola;
+      this.lagmon = lagmon
+    }
+    
+    qoldiq() {
+      console.log(`hozir 20:40da 4ta ${this.non}, 5ta ${this.lagmon} va 2ta ${this.cola} mavjud`);
+    }
+    
+    sotish() {
+      console.log(`hozir 20:50da 1ta ${this.non}, 5ta ${this.lagmon} va 6ta ${this.cola} mavjud`)
+    }
+    
+  }
+const myShop = new Shop('non','lagmon','cola');
+myShop.qoldiq();
 
-
+myShop.sotish();  
+  
 
 
 
