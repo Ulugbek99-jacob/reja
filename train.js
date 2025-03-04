@@ -8,7 +8,7 @@
 //     }
 //     return count;
 //   }
-  
+
 //   console.log(countLetter("e", "engineer"));
 
 
@@ -134,33 +134,54 @@
 //    console.log(checkContent("mitgroup", "gmtiprou"));
   
 // D-TASK
+const moment = require("moment") ;
+
+console.log(moment().format("HH-MM"));
+
 class Shop {
-    non;
-    cola;
-    lagmon;
-    
-    
-    constructor(non, cola, lagmon) {
-      this.non = non;
-      this.cola = cola;
-      this.lagmon = lagmon
-    }
-    
-    qoldiq() {
-      console.log(`hozir 20:40da 4ta ${this.non}, 5ta ${this.lagmon} va 2ta ${this.cola} mavjud`);
-    }
-    
-    sotish() {
-      console.log(`hozir 20:50da 1ta ${this.non}, 5ta ${this.lagmon} va 6ta ${this.cola} mavjud`)
-    }
-    
-  }
-const myShop = new Shop('non','lagmon','cola');
-myShop.qoldiq();
-
-myShop.sotish();  
+  non;
+  cola;
+  lagmon;
   
+  
+  constructor(non, lagmon, cola) {
+    this.non = non;
+    this.cola = cola;
+    this.lagmon = lagmon;
+  }
+  
+  
+  qoldiq() {
+    const time = moment().format("HH:MM");
+    console.log(`hozir ${time}da ${this.non}ta non, ${this.lagmon}ta lagmon va ${this.cola}ta cola mavjud`);
+  }
+  
+  sotish(maxsulot, miqdor) {
+    if (maxsulot === 'non'){
+      this.non = this.non - miqdor;
+    } else if (maxsulot === 'lagmon') {
+      this.lagmon = this.lagmon - miqdor;
+    }else if (maxsulot === 'cola') {
+      this.cola = this.cola - miqdor;
+    }
+  }
+  
+  qabul(maxsulot, miqdor) {
+     if (maxsulot === 'non'){
+      this.non = this.non + miqdor;
+    } else if (maxsulot === 'lagmon') {
+      this.lagmon = this.lagmon + miqdor;
+    }else if (maxsulot === 'cola') {
+      this.cola = this.cola + miqdor;
+    }
+  }
+}
 
+const shop = new Shop(4,5,2);
+shop.qoldiq()
+shop.sotish('non', 3);
+shop.qabul('cola',4);
+shop.qoldiq()
 
 
 
