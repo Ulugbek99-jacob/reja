@@ -35,13 +35,13 @@ document.getElementById("create-form").addEventListener("submit", function(e) {
 
 document.addEventListener("click", function (e) {
   // delete oper
-  console.log(e.target);
+  console.log(e.target); //STEP -1 FRONTENDDAN BACKENDGA REQUEST KETDI
   if (e.target.classList.contains("delete-me")) {
     if (confirm("Are you sure?")) {
       axios
       .post("/delete-item", {id: e.target.getAttribute("data-id")})
       .then((response) => {
-        console.log(response.data);
+        console.log(response.data); //STEP -6 BACKENDDAN FRONTENTGA 
         e.target.parentElement.parentElement.remove();
       })
       .catch((err) => {

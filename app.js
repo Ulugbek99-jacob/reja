@@ -43,12 +43,12 @@ app.get('/author', (req, res) => {
 });
 
 app.post("/delete-item", (req, res) => {
-  const id = req.body.id;
-  db.collection("plans").deleteOne(
+  const id = req.body.id; //STEP -2 FRONTENDAN BACKENDGA REQUEST KELDI
+  db.collection("plans").deleteOne( //STEP -3 SERVERDAN DATABASEGA KIRISH
     {_id: new mongodb.ObjectId(id) },
-    function(err, data) {
+    function(err, data) {  // STEP 4 DATABASEDAN SERVERGA MALUMOT KELDI
       res.json({ state: "success"});
-    }
+    } // SERVERDAN FRONTENDGA MALUMOT JONATISH
   );
 });
 

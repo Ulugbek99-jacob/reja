@@ -133,58 +133,61 @@
 //    }
 //    console.log(checkContent("mitgroup", "gmtiprou"));
   
-// D-TASK
-const moment = require("moment") ;
+// // D-TASK
+// const moment = require("moment") ;
 
-console.log(moment().format("HH-MM"));
+// console.log(moment().format("HH-MM"));
 
-class Shop {
-  non;
-  cola;
-  lagmon;
+// class Shop {
+//   non;
+//   cola;
+//   lagmon;
   
   
-  constructor(non, lagmon, cola) {
-    this.non = non;
-    this.cola = cola;
-    this.lagmon = lagmon;
-  }
+//   constructor(non, lagmon, cola) {
+//     this.non = non;
+//     this.cola = cola;
+//     this.lagmon = lagmon;
+//   }
   
   
-  qoldiq() {
-    const time = moment().format("HH:MM");
-    console.log(`hozir ${time}da ${this.non}ta non, ${this.lagmon}ta lagmon va ${this.cola}ta cola mavjud`);
-  }
+//   qoldiq() {
+//     const time = moment().format("HH:MM");
+//     console.log(`hozir ${time}da ${this.non}ta non, ${this.lagmon}ta lagmon va ${this.cola}ta cola mavjud`);
+//   }
   
-  sotish(maxsulot, miqdor) {
-    if (maxsulot === 'non'){
-      this.non = this.non - miqdor;
-    } else if (maxsulot === 'lagmon') {
-      this.lagmon = this.lagmon - miqdor;
-    }else if (maxsulot === 'cola') {
-      this.cola = this.cola - miqdor;
-    }
-  }
+//   sotish(maxsulot, miqdor) {
+//     if (maxsulot === 'non'){
+//       this.non = this.non - miqdor;
+//     } else if (maxsulot === 'lagmon') {
+//       this.lagmon = this.lagmon - miqdor;
+//     }else if (maxsulot === 'cola') {
+//       this.cola = this.cola - miqdor;
+//     }
+//   }
   
-  qabul(maxsulot, miqdor) {
-     if (maxsulot === 'non'){
-      this.non = this.non + miqdor;
-    } else if (maxsulot === 'lagmon') {
-      this.lagmon = this.lagmon + miqdor;
-    }else if (maxsulot === 'cola') {
-      this.cola = this.cola + miqdor;
-    }
-  }
+//   qabul(maxsulot, miqdor) {
+//      if (maxsulot === 'non'){
+//       this.non = this.non + miqdor;
+//     } else if (maxsulot === 'lagmon') {
+//       this.lagmon = this.lagmon + miqdor;
+//     }else if (maxsulot === 'cola') {
+//       this.cola = this.cola + miqdor;
+//     }
+//   }
+// }
+
+// const shop = new Shop(4,5,2);
+// shop.qoldiq()
+// shop.sotish('non', 3);
+// shop.qabul('cola',4);
+// shop.qoldiq()
+
+// E-TASK
+function getReverse(word) {
+  return word.split("").reverse("").join("")
 }
-
-const shop = new Shop(4,5,2);
-shop.qoldiq()
-shop.sotish('non', 3);
-shop.qabul('cola',4);
-shop.qoldiq()
-
-
-
+console.log(getReverse("hello"));
 
 
     
